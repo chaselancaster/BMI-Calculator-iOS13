@@ -2,6 +2,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet var heightLabel: UILabel!
+    
+    @IBOutlet var weightLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
