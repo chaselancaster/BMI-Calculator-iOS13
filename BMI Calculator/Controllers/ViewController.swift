@@ -22,5 +22,7 @@ class ViewController: UIViewController {
         weightLabel.text = "\(weight)Kg"
     }
     
+    @IBAction func calculatePressed(_ sender: UIButton) {
+    }
 }
 
