@@ -3,7 +3,6 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet var heightLabel: UILabel!
-    
     @IBOutlet var weightLabel: UILabel!
     
     override func viewDidLoad() {
@@ -13,12 +12,12 @@ class ViewController: UIViewController {
     
     
     @IBAction func heightSliderChanged(_ sender: UISlider) {
-        print(String(format: "%.2f", sender.value), "<- heightSlider")
+        heightLabel.text = String(format: "%.2f", sender.value)
     }
     
     
     @IBAction func weightSliderChanged(_ sender: UISlider) {
-        print(Int(sender.value), "<- weightSlider")
+        weightLabel.text = String(format: "%.0f", sender.value)
     }
     
 }
